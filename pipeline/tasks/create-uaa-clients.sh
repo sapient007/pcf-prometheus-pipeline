@@ -21,12 +21,12 @@ uaac client add cf_exporter \
   --authorized_grant_types client_credentials,refresh_token \
   --authorities cloud_controller.admin_read_only || true #ignore errors
 
-login_to_bosh_uaa
+# login_to_bosh_uaa
 
-echo "Creating Prometheus BOSH UAA Client ..."
-uaac client add bosh_exporter \
-  --name bosh_exporter \
-  --secret ${uaa_bosh_exporter_client_secret} \
-  --authorized_grant_types client_credentials,refresh_token \
-  --authorities bosh.read \
-  --scope bosh.read  || true #ignore errors
+# echo "Creating Prometheus BOSH UAA Client ..."
+# uaac client add bosh_exporter \
+#   --name bosh_exporter \
+#   --secret ${uaa_bosh_exporter_client_secret} \
+#   --authorized_grant_types client_credentials,refresh_token \
+#   --authorities bosh.read \
+#   --scope bosh.read  || true #ignore errors
