@@ -11,5 +11,9 @@ inputs:
 - name: pcf-prometheus-pipeline
 - name: pcf-bosh-creds
 
+params:
+  opsman_url:
+  OPSMAN_PRIVATE_KEY:
+
 run:
   path: pcf-prometheus-pipeline/pipeline/tasks/install-node-exporter.sh
