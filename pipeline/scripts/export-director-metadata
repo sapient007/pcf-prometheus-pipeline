@@ -8,9 +8,9 @@ function cleanup_socks_proxy {
 }
 
 # shellcheck disable=SC1090
-source "$(dirname "${BASH_SOURCE[0]}")/om-cmd"
+# source "$(dirname "${BASH_SOURCE[0]}")/om-cmd"
 
-BOSH_CA_CERT_PATH="${PWD}/bosh.crt"
+# BOSH_CA_CERT_PATH="${PWD}/bosh.crt"
 
 # if om_cmd curl -p /api/v0/deployed/director/credentials/uaa_bbr_client_credentials > /dev/null; then
 #   echo "Retreving BBR client credentials for BOSH Director"
