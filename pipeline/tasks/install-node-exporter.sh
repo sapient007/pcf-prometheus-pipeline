@@ -4,7 +4,7 @@ set -eux
 root_dir=$(cd "$(dirname "$0")/.." && pwd)
 
 source ${root_dir}/tasks/common.sh
-# source ${root_dir}/scripts/export-director-metadata
+source ${root_dir}/scripts/export-director-metadata
 
 login_to_director pcf-bosh-creds
 
