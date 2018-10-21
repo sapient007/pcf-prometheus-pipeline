@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eux
+set -eu
 
 root_dir=$(cd "$(dirname "$0")/.." && pwd)
 
