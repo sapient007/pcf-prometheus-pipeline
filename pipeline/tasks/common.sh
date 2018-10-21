@@ -3,6 +3,8 @@
 function login_to_director() {
 	CREDS=${1}
 	DIRECTOR_FOR_DEPLOYMENT=${2}
+	echo "logging in to director"
+
 
 	if [[ ${DIRECTOR_FOR_DEPLOYMENT} == "external_bosh" ]]; then
 		source "$CREDS/external_bosh.sh"
