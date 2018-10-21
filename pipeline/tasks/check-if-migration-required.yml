@@ -11,6 +11,10 @@ inputs:
 - name: pcf-bosh-creds
 - name: prometheus-release-git
 
+params:
+  opsman_url:
+  OPSMAN_PRIVATE_KEY:
+
 outputs:
 - name: migration
 

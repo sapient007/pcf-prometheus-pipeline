@@ -4,6 +4,8 @@ set -e
 root_dir=$(cd "$(dirname "$0")/.." && pwd)
 
 source ${root_dir}/tasks/common.sh
+source ${root_dir}/scripts/export-director-metadata
+
 
 # required for `migration/*.yml` to find something
 touch migration/empty.yml
